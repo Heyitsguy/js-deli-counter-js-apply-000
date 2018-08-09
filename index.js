@@ -10,5 +10,5 @@ function takeANumber(katzDeliLine, newName){
 
 function nowServing(katzDeliLine){
   var first = katzDeliLine.shift();
-  return katzDeliLine.shift() === "undefined" ? "There is nobody waiting to be served" : first;
+  return katzDeliLine.length === 0 ? "There is nobody waiting to be served!" : "Currently serving " + first;
 }
