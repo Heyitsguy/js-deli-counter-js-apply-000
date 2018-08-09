@@ -2,7 +2,9 @@ var katzDeli = [];
 function takeANumber(katzDeliLine, newName){
   if(typeof newName === 'string'){
     katzDeliLine.push(newName);
-  }else if(typeof newName === "Object")
+  }else if(typeof newName === "object"){
+    katzDeliLine...newName;
+  }
   return "Welcome, " + newName + ". You are number " + (katzDeli.length) + " in line.";
 }
 
